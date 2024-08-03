@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy 11th Birthday Gannu! 🎉</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 800px;
+            border: 5px solid #ffcc00;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            font-size: 2.5em;
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+        .emoji {
+            font-size: 2em;
+        }
+        .message {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #666;
+        }
+        .confetti {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .confetti div {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ffcc00;
+            opacity: 0.9;
+            border-radius: 50%;
+            animation: fall 2s infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+        .confetti div:nth-child(odd) {
+            background: #ff66b2;
+        }
+        .confetti div:nth-child(even) {
+            background: #66ccff;
+        }
+        .confetti div:nth-child(3n) {
+            background: #99ff99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="confetti">
+            <div style="left: 10%; animation-delay: 0s; width: 8px; height: 8px;"></div>
+            <div style="left: 30%; animation-delay: 0.5s; width: 12px; height: 12px;"></div>
+            <div style="left: 50%; animation-delay: 1s; width: 10px; height: 10px;"></div>
+            <div style="left: 70%; animation-delay: 1.5s; width: 6px; height: 6px;"></div>
+            <div style="left: 90%; animation-delay: 2s; width: 14px; height: 14px;"></div>
+        </div>
+        <div class="header">
+            🎉 Happy 11th Birthday Gannu! 🎂
+        </div>
+        <div class="message">
+            Hey Gannu! 🌟<br>
+            Navneet is sending you the biggest birthday wishes ever! 🎈<br>
+            I hope your day is as amazing and fun as you are. Here's to lots of cake, games, and laughter! 🍰🎁<br>
+            You're officially 11 now, and that's super awesome! 🎉🎊<br>
+            Enjoy every moment of your special day! 🥳
+        </div>
+        <div class="footer">
+            - Lots of love, <br>
+            Navneet
+        </div>
+    </div>
+</body>
+</html>
